@@ -1,0 +1,11 @@
+{
+  "name": "mindwell-vision",
+  "version": "1.0.0",
+  "private": true,
+  "description": "安心记 MindWell 的药品识别与食品识别模块（PaddleOCR + YOLOv11 + Food-101 + Tesseract，本地离线）",
+  "type": "module",
+  "dependencies": {
+    "onnxruntime-web": "^1.19.0",
+    "tesseract.js": "^7.0.0"
+  }
+}
