@@ -8,6 +8,28 @@ import { extraDrugs as extraDrugs5 } from './drugs5'
 import { extraDrugs as extraDrugs6 } from './drugs6'
 import { extraDrugs as extraDrugs7 } from './drugs7'
 import { extraDrugs as extraDrugs8 } from './drugs8'
+import { extraDrugs as extraDrugs9 } from './drugs9'
+import { extraDrugs as extraDrugs10 } from './drugs10'
+import { extraDrugs as extraDrugs11 } from './drugs11'
+import { extraDrugs as extraDrugs12 } from './drugs12'
+import { extraDrugs as extraDrugs13 } from './drugs13'
+import { extraDrugs as extraDrugs14 } from './drugs14'
+import { extraDrugs as extraDrugs15 } from './drugs15'
+import { extraDrugs as extraDrugs16 } from './drugs16'
+import { extraDrugs as extraDrugs17 } from './drugs17'
+import { extraDrugs as extraDrugs18 } from './drugs18'
+import { extraDrugs as extraDrugs19 } from './drugs19'
+import { extraDrugs as extraDrugs20 } from './drugs20'
+import { extraDrugs as extraDrugs21 } from './drugs21'
+import { extraDrugs as extraDrugs22 } from './drugs22'
+import { extraDrugs as extraDrugs23 } from './drugs23'
+import { extraDrugs as extraDrugs24 } from './drugs24'
+import { extraDrugs as extraDrugs25 } from './drugs25'
+import { extraDrugs as extraDrugs26 } from './drugs26'
+import { extraDrugs as extraDrugs27 } from './drugs27'
+import { extraDrugs as extraDrugs28 } from './drugs28'
+import { extraDrugs as extraDrugs29 } from './drugs29'
+import { extraDrugs as extraDrugs30 } from './drugs30'
 import { moreDepartments2 } from './departments4'
 import { moreDepartments3 } from './departments5'
 import { moreDepartments4 } from './departments6'
@@ -54,7 +76,7 @@ export const allDepartments: Department[] = mergeDepartments()
 export const allDiseases: Disease[] = (() => {
   const base = [...allDepartments.flatMap((d) => d.diseases), ...subDiseases]
   const mergedExtra: Record<string, CatalogDrug[]> = {}
-  for (const rec of [extraDrugs, extraDrugs3, extraDrugs4, extraDrugs5, extraDrugs6, extraDrugs7, extraDrugs8]) {
+  for (const rec of [extraDrugs, extraDrugs3, extraDrugs4, extraDrugs5, extraDrugs6, extraDrugs7, extraDrugs8, extraDrugs9, extraDrugs10, extraDrugs11, extraDrugs12, extraDrugs13, extraDrugs14, extraDrugs15, extraDrugs16, extraDrugs17, extraDrugs18, extraDrugs19, extraDrugs20, extraDrugs21, extraDrugs22, extraDrugs23, extraDrugs24, extraDrugs25, extraDrugs26, extraDrugs27, extraDrugs28, extraDrugs29, extraDrugs30]) {
     for (const [k, arr] of Object.entries(rec)) {
       mergedExtra[k] = [...(mergedExtra[k] ?? []), ...arr]
     }
